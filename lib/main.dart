@@ -49,7 +49,7 @@ class _DigitalClockState extends State<DigitalClock> {
   }
 
   TextStyle get _textStyle => TextStyle(
-    color: Colors.greenAccent,
+    color: Colors.white,
     fontSize: 48,
     fontFamily: 'Times New Roman',
     fontWeight: FontWeight.bold,
@@ -64,7 +64,6 @@ class _DigitalClockState extends State<DigitalClock> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(_timeString, style: _textStyle),
-            SizedBox(height: 20),
             Text(_dateString, style: _textStyle.copyWith(fontSize: 24)),
             Text(_dayString, style: _textStyle.copyWith(fontSize: 24)),
           ],
