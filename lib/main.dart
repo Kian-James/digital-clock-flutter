@@ -7,10 +7,7 @@ void main() => runApp(DigitalClockApp());
 class DigitalClockApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DigitalClock(),
-      debugShowCheckedModeBanner: false,
-    );
+    return MaterialApp(home: DigitalClock(), debugShowCheckedModeBanner: false);
   }
 }
 
@@ -54,7 +51,7 @@ class _DigitalClockState extends State<DigitalClock> {
   TextStyle get _textStyle => TextStyle(
     color: Colors.greenAccent,
     fontSize: 48,
-    fontFamily: 'Courier',
+    fontFamily: 'Times New Roman',
     fontWeight: FontWeight.bold,
   );
 
@@ -68,10 +65,8 @@ class _DigitalClockState extends State<DigitalClock> {
           children: <Widget>[
             Text(_timeString, style: _textStyle),
             SizedBox(height: 20),
-            Text(_dateString,
-                style: _textStyle.copyWith(fontSize: 24)),
-            Text(_dayString,
-                style: _textStyle.copyWith(fontSize: 24)),
+            Text(_dateString, style: _textStyle.copyWith(fontSize: 24)),
+            Text(_dayString, style: _textStyle.copyWith(fontSize: 24)),
           ],
         ),
       ),
